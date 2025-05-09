@@ -45,8 +45,11 @@ pytest --html=report.html
 
 ## Pipeline de CI
 
-O pipeline está configurado no GitHub Actions para rodar os testes automaticamente a cada push.
+O pipeline está configurado no GitHub Actions para rodar os testes automaticamente a cada push ou pull request na branch `main`.
+
+* Os testes são executados automaticamente.
+* O relatório HTML dos testes é gerado e disponibilizado como artefato na aba de Artefatos da execução da pipeline.
 
 ## Relatórios
 
-Os relatórios dos testes são gerados em formato HTML e disponibilizados como artefato da pipeline.
+Os relatórios dos testes são gerados em formato HTML e podem ser acessados diretamente pelo GitHub Actions como artefatos da execução.
